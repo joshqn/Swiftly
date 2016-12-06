@@ -10,6 +10,11 @@ import UIKit
 
 class EditPasswordTableViewController: UITableViewController {
 
+  @IBOutlet weak var currentPassTF: UITextField!
+  @IBOutlet weak var newPassTF: UITextField!
+  @IBOutlet weak var newPassCheckTF: UITextField!
+  
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,18 +29,8 @@ class EditPasswordTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+  @IBAction func doneButtonPressed(_ sender: Any) {
+  }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

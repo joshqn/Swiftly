@@ -31,5 +31,9 @@ class SignUpViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+  
+  @IBAction func cancelButtonPressed(_ sender: Any) {
+    self.navigationController?.dismiss(animated: true, completion: nil)
+  }
 
 }

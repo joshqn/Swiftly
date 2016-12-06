@@ -10,6 +10,12 @@ import UIKit
 
 class EditProfileTableViewController: UITableViewController {
 
+  @IBOutlet weak var profilePicture: UIImageView!
+  @IBOutlet weak var firstNameTF: UITextField!
+  @IBOutlet weak var lastNameTF: UITextField!
+  @IBOutlet weak var EmailLabel: UILabel!
+  @IBOutlet weak var PhoneLabel: UILabel!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,18 +31,13 @@ class EditProfileTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
+  @IBAction func doneButtonTapped(_ sender: Any) {
+    self.dismiss(animated: true, completion: nil)
+  }
+  
+  @IBAction func cancelButtonTapped(_ sender: Any) {
+    self.dismiss(animated: true, completion: nil)
+  }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

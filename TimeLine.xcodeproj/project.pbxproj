@@ -8,22 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		915BC03C1DDFD2E500C01AAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915BC03B1DDFD2E500C01AAB /* AppDelegate.swift */; };
-		915BC03E1DDFD2E500C01AAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915BC03D1DDFD2E500C01AAB /* ViewController.swift */; };
 		915BC0411DDFD2E500C01AAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915BC03F1DDFD2E500C01AAB /* Main.storyboard */; };
 		915BC0441DDFD2E500C01AAB /* TimeLine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 915BC0421DDFD2E500C01AAB /* TimeLine.xcdatamodeld */; };
 		915BC0461DDFD2E500C01AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915BC0451DDFD2E500C01AAB /* Assets.xcassets */; };
 		915BC0491DDFD2E500C01AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915BC0471DDFD2E500C01AAB /* LaunchScreen.storyboard */; };
+		915BC0511DDFD39500C01AAB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915BC0501DDFD39500C01AAB /* LoginViewController.swift */; };
+		915BC0551DDFDEDA00C01AAB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915BC0541DDFDEDA00C01AAB /* SignUpViewController.swift */; };
+		B0022C341DF12DBC00B7DBE9 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0022C331DF12DBC00B7DBE9 /* EditProfileTableViewController.swift */; };
+		B0056B271DE8A71F00FE5E48 /* HistoryCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0056B261DE8A71F00FE5E48 /* HistoryCellTableViewCell.swift */; };
+		B0056B291DE8BFFE00FE5E48 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0056B281DE8BFFE00FE5E48 /* CameraViewController.swift */; };
+		B03CD02A1DF2815400762D04 /* ProfilePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03CD0291DF2815400762D04 /* ProfilePicView.swift */; };
+		B03CD02D1DF2864F00762D04 /* EditEmailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03CD02C1DF2864F00762D04 /* EditEmailTableViewController.swift */; };
+		B03CD02F1DF2866000762D04 /* EditPhoneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03CD02E1DF2866000762D04 /* EditPhoneTableViewController.swift */; };
+		B03CD0311DF2867300762D04 /* EditPasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03CD0301DF2867300762D04 /* EditPasswordTableViewController.swift */; };
+		B03CD0331DF291E400762D04 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03CD0321DF291E400762D04 /* ActivityTableViewController.swift */; };
+		B03CD0361DF29BD000762D04 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03CD0351DF29BD000762D04 /* GridViewCell.swift */; };
+		B0408ADB1DEA17DB00D3BFF6 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0408ADA1DEA17DB00D3BFF6 /* FormTextField.swift */; };
+		B0408ADD1DEA55FF00D3BFF6 /* AccountSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0408ADC1DEA55FF00D3BFF6 /* AccountSettingsTableViewController.swift */; };
+		B0F4AEDD1DE2886500B2EA30 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4AEDC1DE2886500B2EA30 /* MainTabBarViewController.swift */; };
+		B0F4AEE01DE28A0900B2EA30 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4AEDF1DE28A0900B2EA30 /* ProfileViewController.swift */; };
+		B0F4AEE31DE28A4A00B2EA30 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4AEE21DE28A4A00B2EA30 /* AvatarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		915BC0381DDFD2E500C01AAB /* TimeLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915BC03B1DDFD2E500C01AAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		915BC03D1DDFD2E500C01AAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		915BC0401DDFD2E500C01AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		915BC0431DDFD2E500C01AAB /* TimeLine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeLine.xcdatamodel; sourceTree = "<group>"; };
 		915BC0451DDFD2E500C01AAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		915BC0481DDFD2E500C01AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		915BC04A1DDFD2E500C01AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		915BC0501DDFD39500C01AAB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		915BC0541DDFDEDA00C01AAB /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B0022C331DF12DBC00B7DBE9 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditProfileTableViewController.swift; path = TimeLine/EditProfileTableViewController.swift; sourceTree = "<group>"; };
+		B0056B261DE8A71F00FE5E48 /* HistoryCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCellTableViewCell.swift; sourceTree = "<group>"; };
+		B0056B281DE8BFFE00FE5E48 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		B03CD0291DF2815400762D04 /* ProfilePicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePicView.swift; sourceTree = "<group>"; };
+		B03CD02C1DF2864F00762D04 /* EditEmailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditEmailTableViewController.swift; sourceTree = "<group>"; };
+		B03CD02E1DF2866000762D04 /* EditPhoneTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPhoneTableViewController.swift; sourceTree = "<group>"; };
+		B03CD0301DF2867300762D04 /* EditPasswordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPasswordTableViewController.swift; sourceTree = "<group>"; };
+		B03CD0321DF291E400762D04 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
+		B03CD0351DF29BD000762D04 /* GridViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
+		B0408ADA1DEA17DB00D3BFF6 /* FormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		B0408ADC1DEA55FF00D3BFF6 /* AccountSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingsTableViewController.swift; sourceTree = "<group>"; };
+		B0F4AEDC1DE2886500B2EA30 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		B0F4AEDF1DE28A0900B2EA30 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B0F4AEE21DE28A4A00B2EA30 /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +70,8 @@
 		915BC02F1DDFD2E500C01AAB = {
 			isa = PBXGroup;
 			children = (
+				B03CD0341DF29BA300762D04 /* CollectionViewCell */,
+				B03CD02B1DF2861C00762D04 /* EditProfileVCs */,
 				915BC03A1DDFD2E500C01AAB /* TimeLine */,
 				915BC0391DDFD2E500C01AAB /* Products */,
 			);
@@ -57,7 +89,13 @@
 			isa = PBXGroup;
 			children = (
 				915BC03B1DDFD2E500C01AAB /* AppDelegate.swift */,
-				915BC03D1DDFD2E500C01AAB /* ViewController.swift */,
+				915BC0501DDFD39500C01AAB /* LoginViewController.swift */,
+				915BC0541DDFDEDA00C01AAB /* SignUpViewController.swift */,
+				B0408ADC1DEA55FF00D3BFF6 /* AccountSettingsTableViewController.swift */,
+				B0F4AEDC1DE2886500B2EA30 /* MainTabBarViewController.swift */,
+				B0056B251DE8A6F300FE5E48 /* UITableViewCell */,
+				B0F4AEE11DE28A2D00B2EA30 /* Views */,
+				B0F4AEDE1DE289EE00B2EA30 /* TabViewControllers */,
 				915BC03F1DDFD2E500C01AAB /* Main.storyboard */,
 				915BC0451DDFD2E500C01AAB /* Assets.xcassets */,
 				915BC0471DDFD2E500C01AAB /* LaunchScreen.storyboard */,
@@ -65,6 +103,54 @@
 				915BC0421DDFD2E500C01AAB /* TimeLine.xcdatamodeld */,
 			);
 			path = TimeLine;
+			sourceTree = "<group>";
+		};
+		B0056B251DE8A6F300FE5E48 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B0056B261DE8A71F00FE5E48 /* HistoryCellTableViewCell.swift */,
+			);
+			name = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		B03CD02B1DF2861C00762D04 /* EditProfileVCs */ = {
+			isa = PBXGroup;
+			children = (
+				B0022C331DF12DBC00B7DBE9 /* EditProfileTableViewController.swift */,
+				B03CD02C1DF2864F00762D04 /* EditEmailTableViewController.swift */,
+				B03CD02E1DF2866000762D04 /* EditPhoneTableViewController.swift */,
+				B03CD0301DF2867300762D04 /* EditPasswordTableViewController.swift */,
+			);
+			name = EditProfileVCs;
+			sourceTree = "<group>";
+		};
+		B03CD0341DF29BA300762D04 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B03CD0351DF29BD000762D04 /* GridViewCell.swift */,
+			);
+			name = CollectionViewCell;
+			path = TimeLine;
+			sourceTree = "<group>";
+		};
+		B0F4AEDE1DE289EE00B2EA30 /* TabViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4AEDF1DE28A0900B2EA30 /* ProfileViewController.swift */,
+				B0056B281DE8BFFE00FE5E48 /* CameraViewController.swift */,
+				B03CD0321DF291E400762D04 /* ActivityTableViewController.swift */,
+			);
+			name = TabViewControllers;
+			sourceTree = "<group>";
+		};
+		B0F4AEE11DE28A2D00B2EA30 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4AEE21DE28A4A00B2EA30 /* AvatarView.swift */,
+				B03CD0291DF2815400762D04 /* ProfilePicView.swift */,
+				B0408ADA1DEA17DB00D3BFF6 /* FormTextField.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +185,7 @@
 				TargetAttributes = {
 					915BC0371DDFD2E500C01AAB = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = ZZWK7JZAP8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,9 +226,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03CD0311DF2867300762D04 /* EditPasswordTableViewController.swift in Sources */,
+				B0F4AEE01DE28A0900B2EA30 /* ProfileViewController.swift in Sources */,
+				B0408ADD1DEA55FF00D3BFF6 /* AccountSettingsTableViewController.swift in Sources */,
+				B0F4AEDD1DE2886500B2EA30 /* MainTabBarViewController.swift in Sources */,
+				B0F4AEE31DE28A4A00B2EA30 /* AvatarView.swift in Sources */,
+				B03CD02D1DF2864F00762D04 /* EditEmailTableViewController.swift in Sources */,
+				915BC0511DDFD39500C01AAB /* LoginViewController.swift in Sources */,
+				B03CD02F1DF2866000762D04 /* EditPhoneTableViewController.swift in Sources */,
+				B03CD0361DF29BD000762D04 /* GridViewCell.swift in Sources */,
+				B0022C341DF12DBC00B7DBE9 /* EditProfileTableViewController.swift in Sources */,
+				B03CD0331DF291E400762D04 /* ActivityTableViewController.swift in Sources */,
 				915BC0441DDFD2E500C01AAB /* TimeLine.xcdatamodeld in Sources */,
-				915BC03E1DDFD2E500C01AAB /* ViewController.swift in Sources */,
+				915BC0551DDFDEDA00C01AAB /* SignUpViewController.swift in Sources */,
+				B0056B271DE8A71F00FE5E48 /* HistoryCellTableViewCell.swift in Sources */,
 				915BC03C1DDFD2E500C01AAB /* AppDelegate.swift in Sources */,
+				B03CD02A1DF2815400762D04 /* ProfilePicView.swift in Sources */,
+				B0056B291DE8BFFE00FE5E48 /* CameraViewController.swift in Sources */,
+				B0408ADB1DEA17DB00D3BFF6 /* FormTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZZWK7JZAP8;
 				INFOPLIST_FILE = TimeLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KuehnLLC.TimeLine;
@@ -276,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZZWK7JZAP8;
 				INFOPLIST_FILE = TimeLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KuehnLLC.TimeLine;
@@ -303,6 +407,7 @@
 				915BC04F1DDFD2E500C01AAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
