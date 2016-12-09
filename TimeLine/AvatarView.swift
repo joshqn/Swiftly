@@ -16,6 +16,7 @@ class AvatarView: UIView {
   let concertsLabel = UILabel()
   let hoursLabel = UILabel()
   let historyLabel = UILabel()
+  let nameLabel = UILabel()
   let layerGradiest = CAGradientLayer()
   let bottomBorder = UIView()
   
@@ -43,19 +44,31 @@ class AvatarView: UIView {
     }
   }
   
+  @IBInspectable var nameColor:UIColor = UIColor.black {
+    didSet {
+      configure()
+    }
+  }
+  
   @IBInspectable var imageAvatar: UIImage? {
     didSet {
       configure()
     }
   }
   
-  @IBInspectable var hours = 0 {
+  @IBInspectable var name:String = "First Last" {
     didSet {
       configure()
     }
   }
   
-  @IBInspectable var concerts = 0 {
+  @IBInspectable var hours = 1.5 {
+    didSet {
+      configure()
+    }
+  }
+  
+  @IBInspectable var concerts = 4 {
     didSet {
       configure()
     }
@@ -90,7 +103,7 @@ class AvatarView: UIView {
     
     //Setup hoursLabel Constraints
     let hourstrailing = hoursLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15)
-    let hoursBottom = hoursLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20)
+    let hoursBottom = hoursLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -45)
     NSLayoutConstraint.activate([hourstrailing,hoursBottom])
     
     //Setup concertsLabel
@@ -101,13 +114,13 @@ class AvatarView: UIView {
     
     //Setup concertsLabel Constraints
     let concertsLeading = concertsLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20)
-    let concertsBottom = concertsLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20)
+    let concertsBottom = concertsLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -45)
     NSLayoutConstraint.activate([concertsLeading,concertsBottom])
     
     //Setup historyLabel
     historyLabel.translatesAutoresizingMaskIntoConstraints = false
     historyLabel.textAlignment = .center
-    historyLabel.font = UIFont.systemFont(ofSize: 26)
+    historyLabel.font = UIFont.systemFont(ofSize: 20)
     historyLabel.textColor = UIColor.black
     historyLabel.text = "History"
     self.addSubview(historyLabel)
@@ -117,13 +130,23 @@ class AvatarView: UIView {
     let historyCenterX = historyLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor)
     NSLayoutConstraint.activate([historyBottom,historyCenterX])
     
-    //Seteup BottomBorder Layout
+    //Setup BottomBorder Layout
     self.addSubview(bottomBorder)
     bottomBorder.translatesAutoresizingMaskIntoConstraints = false
     bottomBorder.widthAnchor.constraint(equalTo: self.widthAnchor, constant: -20).isActive = true
     bottomBorder.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
     bottomBorder.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
     bottomBorder.heightAnchor.constraint(equalToConstant: 1).isActive = true
+    
+    //Setup nameLabel Constraints
+    self.addSubview(nameLabel)
+    nameLabel.translatesAutoresizingMaskIntoConstraints = false
+    nameLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+    nameLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -30).isActive = true
+    
+    //Setup nameLabel
+    nameLabel.textAlignment = .center
+    nameLabel.font = UIFont.systemFont(ofSize: 26)
     
   }
   
@@ -141,12 +164,15 @@ class AvatarView: UIView {
     concertsLabel.text = "Total\nConcerts:\n \(concerts)"
     
     bottomBorder.backgroundColor = bottomBarColor
+    
+    nameLabel.text = name
+    nameLabel.textColor = nameColor
   }
   
   override func layoutSubviews() {
     super.layoutSubviews()
-    let layerAvatarHeight = self.bounds.height - margin
-    layerAvatar.frame = CGRect(x: self.bounds.width/2 - layerAvatarHeight/2, y: 20, width: layerAvatarHeight, height: layerAvatarHeight)
+    let layerAvatarHeight = self.bounds.height - margin - 10
+    layerAvatar.frame = CGRect(x: self.bounds.width/2 - layerAvatarHeight/2, y: 10, width: layerAvatarHeight, height: layerAvatarHeight)
     let maskLayer = CAShapeLayer()
     maskLayer.path = UIBezierPath(ovalIn: layerAvatar.bounds).cgPath
     layerAvatar.mask = maskLayer

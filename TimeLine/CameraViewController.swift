@@ -14,6 +14,8 @@ class CameraViewController: UIViewController {
   
   @IBOutlet weak var assetCollectionView: UICollectionView!
   
+  @IBOutlet weak var cameraButton: UIBarButtonItem!
+  
   var fetchResult: PHFetchResult<PHAsset>!
   var assetCollection: PHAssetCollection!
   
@@ -31,6 +33,8 @@ class CameraViewController: UIViewController {
   override func viewDidLoad() {
       super.viewDidLoad()
     
+    automaticallyAdjustsScrollViewInsets = false
+    
     assetCollectionView.delegate = self
     assetCollectionView.dataSource = self
     
@@ -42,13 +46,14 @@ class CameraViewController: UIViewController {
       fetchResult = PHAsset.fetchAssets(with: allPhotosOptions)
     }
     
-    let width = assetCollectionView.frame.width / 3
+    let width = assetCollectionView.frame.width / 4
     let layout = assetCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
     layout.itemSize = CGSize(width: width, height: width)
     thumbnailSize = CGSize(width: width, height: width)
 
-    //self.picker.delegate = self
-    //self.picker.sourceType = UIImagePickerController.isSourceTypeAvailable(.camera) ? .camera : .photoLibrary
+    self.picker.delegate = self
+    self.cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera) ? true : false
+    self.picker.sourceType = UIImagePickerController.isSourceTypeAvailable(.camera) ? .camera : .photoLibrary
     
       // Do any additional setup after loading the view.
     
@@ -70,7 +75,6 @@ class CameraViewController: UIViewController {
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    //self.present(picker, animated: true, completion: nil)
   }
 
     override func didReceiveMemoryWarning() {
@@ -90,6 +94,11 @@ class CameraViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+  
+  
+  @IBAction func cameraButtonTapped(_ sender: Any) {
+    self.present(picker, animated: true, completion: nil)
+  }
 
 }
 
@@ -125,7 +134,34 @@ extension CameraViewController: UICollectionViewDataSource {
 extension CameraViewController: UIImagePickerControllerDelegate {
   func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
     dismiss(animated: true, completion: nil)
-    tabBarController?.selectedIndex = 2
+  }
+  
+  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+//    var newImage: UIImage
+//    
+//    if let possibleImage = info["UIImagePickerControllerEditedImage"] as? UIImage {
+//      newImage = possibleImage
+//    } else if let possibleImage = info["UIImagePickerControllerOriginalImage"] as? UIImage {
+//      newImage = possibleImage
+//    } else {
+//      return
+//    }
+//    
+//    let imageName = UUID().uuidString
+//    let imagePath = getDocumentsDirectory().appendingPathComponent(imageName)
+//    
+//    if let jpegData = UIImageJPEGRepresentation(newImage, 80) {
+//      try? jpegData.write(to: imagePath)
+//    }
+
+    
+    dismiss(animated: true, completion: nil)
+  }
+  
+  func getDocumentsDirectory() -> URL {
+    let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+    let documentsDirectory = paths[0]
+    return documentsDirectory
   }
 }
 

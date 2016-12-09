@@ -14,6 +14,8 @@ class ProfileViewController: UIViewController {
   
   @IBOutlet weak var tableView: UITableView!
   
+  var pastConcerts:[PastConcert] = []
+  
   lazy var formatter: DateFormatter = {
     var formatter = DateFormatter()
     formatter.dateStyle = .medium
@@ -31,11 +33,29 @@ class ProfileViewController: UIViewController {
     tableView.dataSource = self
     
     automaticallyAdjustsScrollViewInsets = false
+    setupPastTickets()
+    
+    avatarView.concerts = pastConcerts.count
+    
+    var hoursSaved:Double = 0.0
+    for pastConcert in pastConcerts {
+      hoursSaved = hoursSaved + Double(Double(pastConcert.hoursSaved ?? "0.0") ?? 0.0)
+    }
+    avatarView.hours = hoursSaved
   }
 
   override func didReceiveMemoryWarning() {
       super.didReceiveMemoryWarning()
       // Dispose of any resources that can be recreated.
+  }
+  
+  func setupPastTickets() {
+    pastConcerts.append(PastConcert(artistName: "Dan + Shay", date: "Nov 3, 2016", hoursSaved: "2", imageName: "DanShay.png"))
+    pastConcerts.append(PastConcert(artistName: "Cody Johnson", date: "Oct 18, 2016", hoursSaved: "3", imageName: "CodyJ.png"))
+    pastConcerts.append(PastConcert(artistName: "Molly & Pals", date: "Nov 25, 2016", hoursSaved: ".75", imageName: "MollyP.png"))
+    pastConcerts.append(PastConcert(artistName: "21 Pilots", date: "Jul 15, 2016", hoursSaved: "2", imageName: "21Pilots.png"))
+    pastConcerts.append(PastConcert(artistName: "Ben Rector", date: "Aug 23, 2016", hoursSaved: "3", imageName: "BenR.png"))
+    pastConcerts.append(PastConcert(artistName: "Paper Weight", date: "Sep 27, 2016", hoursSaved: "1.25", imageName: "PaperWeight.png"))
   }
 
 }
@@ -52,15 +72,22 @@ extension ProfileViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 1
+    return pastConcerts.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-    cell.detailTextLabel?.text = formatter.string(from: Date())
-    cell.textLabel?.text = "Luke Bryan"
+    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! HistoryCellTableViewCell
+   
+    let artistName = pastConcerts[indexPath.row].artistName
+    let date = pastConcerts[indexPath.row].date
+    let image = pastConcerts[indexPath.row].imageName
+    let time = pastConcerts[indexPath.row].hoursSaved
     
-    avatarView.concerts = avatarView.concerts + 1
+    cell.nameLabel.text = artistName
+    cell.dateLabel.text = date
+    cell.artistImageView.image = UIImage(named: image ?? "") ?? nil
+    cell.hrsSavedLabel.text = time
+    
     
     return cell
   }

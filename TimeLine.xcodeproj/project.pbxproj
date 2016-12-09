@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910C94071DFB0D5200D63671 /* BouneAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C94011DFB0D5200D63671 /* BouneAnimationController.swift */; };
+		910C94081DFB0D5200D63671 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C94021DFB0D5200D63671 /* DimmingPresentationController.swift */; };
+		910C94091DFB0D5200D63671 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C94031DFB0D5200D63671 /* PopUpView.swift */; };
+		910C940A1DFB0D5200D63671 /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C94041DFB0D5200D63671 /* SlideOutAnimationController.swift */; };
+		910C940B1DFB0D5200D63671 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C94051DFB0D5200D63671 /* Ticket.swift */; };
+		910C940C1DFB0D5200D63671 /* TicketStubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C94061DFB0D5200D63671 /* TicketStubViewController.swift */; };
+		911620D21DFB5B7300ED5FDC /* PastConcert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911620D11DFB5B7300ED5FDC /* PastConcert.swift */; };
 		915BC03C1DDFD2E500C01AAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915BC03B1DDFD2E500C01AAB /* AppDelegate.swift */; };
 		915BC0411DDFD2E500C01AAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915BC03F1DDFD2E500C01AAB /* Main.storyboard */; };
 		915BC0441DDFD2E500C01AAB /* TimeLine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 915BC0421DDFD2E500C01AAB /* TimeLine.xcdatamodeld */; };
@@ -14,6 +21,8 @@
 		915BC0491DDFD2E500C01AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915BC0471DDFD2E500C01AAB /* LaunchScreen.storyboard */; };
 		915BC0511DDFD39500C01AAB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915BC0501DDFD39500C01AAB /* LoginViewController.swift */; };
 		915BC0551DDFDEDA00C01AAB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915BC0541DDFDEDA00C01AAB /* SignUpViewController.swift */; };
+		918899261DFB0DB5003446C8 /* ActivityTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918899251DFB0DB5003446C8 /* ActivityTableCell.swift */; };
+		918899281DFB4357003446C8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918899271DFB4357003446C8 /* GradientView.swift */; };
 		B0022C341DF12DBC00B7DBE9 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0022C331DF12DBC00B7DBE9 /* EditProfileTableViewController.swift */; };
 		B0056B271DE8A71F00FE5E48 /* HistoryCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0056B261DE8A71F00FE5E48 /* HistoryCellTableViewCell.swift */; };
 		B0056B291DE8BFFE00FE5E48 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0056B281DE8BFFE00FE5E48 /* CameraViewController.swift */; };
@@ -31,6 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		910C94011DFB0D5200D63671 /* BouneAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouneAnimationController.swift; sourceTree = "<group>"; };
+		910C94021DFB0D5200D63671 /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
+		910C94031DFB0D5200D63671 /* PopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
+		910C94041DFB0D5200D63671 /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
+		910C94051DFB0D5200D63671 /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		910C94061DFB0D5200D63671 /* TicketStubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketStubViewController.swift; sourceTree = "<group>"; };
+		911620D11DFB5B7300ED5FDC /* PastConcert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastConcert.swift; sourceTree = "<group>"; };
 		915BC0381DDFD2E500C01AAB /* TimeLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915BC03B1DDFD2E500C01AAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		915BC0401DDFD2E500C01AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +56,8 @@
 		915BC04A1DDFD2E500C01AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		915BC0501DDFD39500C01AAB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		915BC0541DDFDEDA00C01AAB /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		918899251DFB0DB5003446C8 /* ActivityTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableCell.swift; sourceTree = "<group>"; };
+		918899271DFB4357003446C8 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B0022C331DF12DBC00B7DBE9 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditProfileTableViewController.swift; path = TimeLine/EditProfileTableViewController.swift; sourceTree = "<group>"; };
 		B0056B261DE8A71F00FE5E48 /* HistoryCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCellTableViewCell.swift; sourceTree = "<group>"; };
 		B0056B281DE8BFFE00FE5E48 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -67,9 +85,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		911620CF1DFB5B1000ED5FDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				910C94051DFB0D5200D63671 /* Ticket.swift */,
+				911620D11DFB5B7300ED5FDC /* PastConcert.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		911620D01DFB5B4400ED5FDC /* TicketStubVC */ = {
+			isa = PBXGroup;
+			children = (
+				910C94011DFB0D5200D63671 /* BouneAnimationController.swift */,
+				910C94021DFB0D5200D63671 /* DimmingPresentationController.swift */,
+				918899271DFB4357003446C8 /* GradientView.swift */,
+				910C94031DFB0D5200D63671 /* PopUpView.swift */,
+				910C94041DFB0D5200D63671 /* SlideOutAnimationController.swift */,
+				910C94061DFB0D5200D63671 /* TicketStubViewController.swift */,
+			);
+			name = TicketStubVC;
+			sourceTree = "<group>";
+		};
 		915BC02F1DDFD2E500C01AAB = {
 			isa = PBXGroup;
 			children = (
+				911620D01DFB5B4400ED5FDC /* TicketStubVC */,
+				911620CF1DFB5B1000ED5FDC /* Model */,
 				B03CD0341DF29BA300762D04 /* CollectionViewCell */,
 				B03CD02B1DF2861C00762D04 /* EditProfileVCs */,
 				915BC03A1DDFD2E500C01AAB /* TimeLine */,
@@ -108,6 +150,7 @@
 		B0056B251DE8A6F300FE5E48 /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				918899251DFB0DB5003446C8 /* ActivityTableCell.swift */,
 				B0056B261DE8A71F00FE5E48 /* HistoryCellTableViewCell.swift */,
 			);
 			name = UITableViewCell;
@@ -185,7 +228,6 @@
 				TargetAttributes = {
 					915BC0371DDFD2E500C01AAB = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = ZZWK7JZAP8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -226,22 +268,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910C94091DFB0D5200D63671 /* PopUpView.swift in Sources */,
 				B03CD0311DF2867300762D04 /* EditPasswordTableViewController.swift in Sources */,
 				B0F4AEE01DE28A0900B2EA30 /* ProfileViewController.swift in Sources */,
+				910C94071DFB0D5200D63671 /* BouneAnimationController.swift in Sources */,
 				B0408ADD1DEA55FF00D3BFF6 /* AccountSettingsTableViewController.swift in Sources */,
 				B0F4AEDD1DE2886500B2EA30 /* MainTabBarViewController.swift in Sources */,
 				B0F4AEE31DE28A4A00B2EA30 /* AvatarView.swift in Sources */,
 				B03CD02D1DF2864F00762D04 /* EditEmailTableViewController.swift in Sources */,
 				915BC0511DDFD39500C01AAB /* LoginViewController.swift in Sources */,
 				B03CD02F1DF2866000762D04 /* EditPhoneTableViewController.swift in Sources */,
+				918899281DFB4357003446C8 /* GradientView.swift in Sources */,
 				B03CD0361DF29BD000762D04 /* GridViewCell.swift in Sources */,
 				B0022C341DF12DBC00B7DBE9 /* EditProfileTableViewController.swift in Sources */,
+				910C94081DFB0D5200D63671 /* DimmingPresentationController.swift in Sources */,
+				918899261DFB0DB5003446C8 /* ActivityTableCell.swift in Sources */,
 				B03CD0331DF291E400762D04 /* ActivityTableViewController.swift in Sources */,
 				915BC0441DDFD2E500C01AAB /* TimeLine.xcdatamodeld in Sources */,
 				915BC0551DDFDEDA00C01AAB /* SignUpViewController.swift in Sources */,
 				B0056B271DE8A71F00FE5E48 /* HistoryCellTableViewCell.swift in Sources */,
 				915BC03C1DDFD2E500C01AAB /* AppDelegate.swift in Sources */,
+				910C940C1DFB0D5200D63671 /* TicketStubViewController.swift in Sources */,
 				B03CD02A1DF2815400762D04 /* ProfilePicView.swift in Sources */,
+				910C940A1DFB0D5200D63671 /* SlideOutAnimationController.swift in Sources */,
+				911620D21DFB5B7300ED5FDC /* PastConcert.swift in Sources */,
+				910C940B1DFB0D5200D63671 /* Ticket.swift in Sources */,
 				B0056B291DE8BFFE00FE5E48 /* CameraViewController.swift in Sources */,
 				B0408ADB1DEA17DB00D3BFF6 /* FormTextField.swift in Sources */,
 			);
@@ -366,7 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZZWK7JZAP8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TimeLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KuehnLLC.TimeLine;
@@ -379,7 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZZWK7JZAP8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TimeLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KuehnLLC.TimeLine;
